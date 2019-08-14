@@ -1,0 +1,45 @@
+.footer {
+    grid-column: 2 / 3;
+    background-color: $color-grey-dark-1;
+    padding-top: $mg-medium;
+    animation: fadeIn .5s ease-out;
+
+    &__wrap {
+        padding-bottom: $mg-medium;
+    }
+
+    &__head {
+        font-size: 3.5rem;
+        padding: $mg-small;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-primary-dark;
+    }
+
+    &__icons {
+        padding: $mg-medium;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 20rem);
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    &__icon {
+        display: grid;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        color: $color-primary-dark;
+    }
+
+    &__svg {
+        width: 4rem;
+        height: 4rem;
+        fill: $color-primary-dark;
+        justify-self: center;
+        margin: 1rem 0;
+    }
+}

@@ -1,0 +1,44 @@
+.categories {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    background-color: $color-grey-dark-1;
+    box-shadow: $bs-3;
+
+
+    &__head {
+        display: block;
+        background-color: $color-white;
+        padding: $mg-small $mg-medium;
+        color: $color-primary;
+        font-size: 2.1rem;
+        font-weight: 700;
+        letter-spacing: .1rem;
+    }
+
+    &__list {
+        list-style: none;
+
+        &>*:not(:last-child) {
+            border-bottom: $line;
+        }
+    }
+
+    &>a.active {
+        text-decoration: none;
+    }
+
+    &__item {
+        padding: $mg-small $mg-small;
+        text-align: center;
+        font-size: 1.4rem;
+        cursor: pointer;
+        color: $color-white;
+        font-family: 'Open sans', sans-serif;
+        font-weight: normal;
+
+
+        &:hover {
+            background-color: $color-primary-dark;
+        }
+    }
+}

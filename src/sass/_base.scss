@@ -1,0 +1,90 @@
+//Color Variables
+
+$color-primary: #eb2f64;
+$color-primary-light: #FF3366;
+$color-primary-dark: #BA265D;
+
+$color-grey-light-1: #faf9f9;
+$color-grey-light-2: #f4f2f2;
+$color-grey-light-3: #f0eeee;
+$color-grey-light-4: #ccc;
+
+$color-grey-dark-1: #333;
+$color-grey-dark-2: #777;
+$color-grey-dark-3: #999;
+//Box Shadow Variables
+$bs-1: 0 4rem 6rem rgba(0, 0, 0, .4);
+$bs-2: 0 .8rem 1.5rem rgba(0, 0, 0, .4);
+$bs-3: 0 .8rem 1.3rem rgba(0, 0, 0, .1);
+
+$color-black: #000;
+
+$color-white: #fff;
+
+//Size Variables 
+$mg-huge: 8rem;
+$mg-large: 6rem;
+$mg-medium: 4rem;
+$mg-small: 2rem;
+$mg-smallest: 1rem;
+
+$line: 1px solid #777;
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 100%;
+    background-color: $color-white;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr minmax(min-content, 1200px) 1fr;
+    grid-template-rows: max-content minmax(min-content, 1fr) max-content;
+    background-image: url(../img/circles-light.png);
+    padding: $mg-medium;
+}
+
+main {
+    min-height: 40rem;
+}

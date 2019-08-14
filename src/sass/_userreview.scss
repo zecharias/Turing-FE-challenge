@@ -1,0 +1,56 @@
+.user-review {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-color: $color-white;
+    box-shadow: $bs-3;
+
+    &__wrap {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__head {
+        background-color: $color-grey-dark-1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.6rem;
+        color: $color-grey-light-1;
+        width: 100%;
+        padding: $mg-small 0;
+    }
+
+
+    &__review {
+        font-size: 1.8rem;
+        font-family: 'Lato'sans-serif;
+        border: none;
+        border-radius: 15px;
+        background-color: $color-grey-light-3;
+        box-shadow: $bs-3;
+        min-height: 10rem;
+        min-width: 80%;
+        max-width: 30rem;
+        max-height: 10rem;
+        padding: $mg-small $mg-smallest;
+        transition: all .2s;
+
+        &:focus {
+            outline: none;
+            border: none;
+            background-color: $color-grey-light-4;
+        }
+    }
+
+    &__stars {
+        padding: $mg-smallest 0;
+
+        &>* {
+            cursor: pointer;
+            margin: 0 .2rem;
+        }
+    }
+}

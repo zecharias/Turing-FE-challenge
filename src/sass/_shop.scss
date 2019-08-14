@@ -1,0 +1,147 @@
+.main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+
+    background-color: $color-grey-light-2;
+    box-shadow: $bs-1;
+    border-radius: 3px;
+}
+
+.shop {
+    display: grid;
+    grid-template-rows: max-content min-content 50rem 1fr;
+    grid-template-columns: max-content 1fr;
+
+    &>* {
+        animation: fadeIn .5s ease-out;
+    }
+}
+
+.departments {
+    grid-column: 2 / 5;
+    background-color: $color-white;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: all .2s;
+    height: 6.5rem;
+    box-shadow: $bs-3;
+    list-style: none;
+
+    &__item {
+        display: block;
+        height: 100%;
+        width: 100%;
+        padding: $mg-small 0;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: $color-primary-light;
+        text-shadow: $bs-1;
+        text-align: center;
+
+        &:hover {
+            color: $color-grey-light-1;
+            background-color: $color-primary-dark;
+        }
+    }
+}
+
+.searchBar {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 40rem 1fr;
+    padding: $mg-medium $mg-medium $mg-small;
+
+    &__btn {
+        border: none;
+        background: none;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        color: $color-primary;
+        border: 1px solid $color-primary;
+        padding: .5rem .6rem;
+        transition: all .2s;
+        cursor: pointer;
+        justify-self: center;
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white;
+        }
+
+        &:focus,
+        &:active,
+        &:link {
+            outline: none;
+            border: 2px solid $color-primary;
+        }
+    }
+
+    &__input-wrap {
+        background-color: $color-grey-dark-3;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 $mg-small;
+        width: auto;
+        justify-self: center;
+    }
+
+    &__svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: $color-grey-dark-1;
+    }
+
+    &__input {
+        height: 2.8rem;
+        width: 40rem;
+        border: none;
+        background-color: $color-grey-dark-3;
+        transition: all .2s;
+        text-align: center;
+        border-radius: 100px;
+        color: $color-black;
+
+
+
+        &:focus,
+        &:active {
+            outline: none;
+            border: none;
+            width: 45rem;
+            font-family: inherit;
+        }
+    }
+}
+
+.page {
+
+    &__list {
+        margin: $mg-medium 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__display {
+        font-size: 1.6rem;
+        color: $color-black;
+        font-weight: 600;
+        text-align: center;
+        padding: $mg-small;
+    }
+
+    &__svg {
+        width: 3rem;
+        height: 3rem;
+        fill: $color-grey-dark-1;
+        cursor: pointer;
+
+    }
+}

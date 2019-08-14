@@ -1,0 +1,67 @@
+.order {
+    display: grid;
+    align-items: center;
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr minmax(30rem, 60rem) 1fr;
+        grid-row-gap: $mg-small;
+        margin-bottom: $mg-medium;
+        animation: fadeIn .5s ease-out;
+
+        &>* {
+            grid-column: 2 / 3;
+        }
+
+
+    }
+
+    &__head {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        color: $color-grey-light-1;
+        background-color: $color-grey-dark-1;
+        padding: $mg-small;
+
+    }
+
+    &__tax {
+        font-size: 2.4rem;
+        padding: $mg-small;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: $bs-3;
+        background-color: $color-grey-light-3;
+        color: $color-grey-dark-1;
+    }
+
+    &__select {
+        border: none;
+        background-color: $color-grey-light-3;
+        box-shadow: $bs-3;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding: $mg-smallest;
+        color: $color-grey-dark-1;
+        transition: all .2s;
+        cursor: pointer;
+
+        &>option {
+            font-size: 1.6rem;
+            font-weight: 700;
+            padding: $mg-small;
+            color: $color-grey-dark-1;
+            transition: all .2s;
+
+        }
+
+        &:focus {
+            outline: none;
+            background-color: $color-grey-light-4;
+        }
+    }
+}
